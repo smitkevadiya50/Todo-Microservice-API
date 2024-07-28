@@ -39,7 +39,7 @@ The load balancer is responsible for distributing the incoming requests to the a
                |                               |                               |
                v                               v                               v
    +---------------------+           +---------------------+           +---------------------+
-   | Add Server          |           | Delete Server       |           | Complete Server     |
+   | Add/Select Server   |           | Delete Server       |           | Complete Server     |
    |                     |           |                     |           |                     |
    | +--------------+    |           | +--------------+    |           | +--------------+    |
    | | Server 1     |    |           | | Server 1     |    |           | | Server 1     |    |
