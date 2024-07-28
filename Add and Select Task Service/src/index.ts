@@ -2,7 +2,7 @@ import express, { ErrorRequestHandler } from 'express';
 import { Pool } from 'pg';
 
 const app = express();
-const port = 3001;
+const port = 3002;
 
 const pool = new Pool({
     user: 'postgres',
@@ -35,6 +35,10 @@ app.get('/', async (req, res) => {
         res.status(500).json({ error: err });
     }
 });
+
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+  });
 
 
 app.listen(port,() => {
