@@ -5,6 +5,9 @@ This project implements a simple Todo app API using Node.js and PostgreSQL, empl
 - **Delete Task Service:** Handles deleting existing tasks.
 - **Complete Task Service:** Handles marking tasks as completed.
 
+### API Gateway: 
+Handles routing requests to the appropriate backend service. Contains a Load Balancer for routing and health checks.
+
 ### Load Balancer (Go): 
 The load balancer is responsible for distributing the incoming requests to the appropriate service based on the endpoint.
 
